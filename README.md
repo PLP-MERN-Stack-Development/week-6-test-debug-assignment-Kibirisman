@@ -111,12 +111,17 @@ mern-bug-tracker/
 
 3. **Environment Setup**
    
-   The server already includes a `.env` file with MongoDB Atlas credentials:
+   Copy the `.env.example` file to `.env` and update with your MongoDB Atlas credentials:
+   ```bash
+   cp server/.env.example server/.env
+   ```
+   
+   Then update the `.env` file with your actual database credentials:
    ```
    NODE_ENV=development
    PORT=5000
-   MONGODB_URI=mongodb+srv://swerobertkibet:W3JQZb2LH0lWagJ6@cluster0.pgwwbum.mongodb.net/bug-tracker?retryWrites=true&w=majority&appName=Cluster0
-   MONGODB_TEST_URI=mongodb+srv://swerobertkibet:W3JQZb2LH0lWagJ6@cluster0.pgwwbum.mongodb.net/bug-tracker-test?retryWrites=true&w=majority&appName=Cluster0
+   MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/bug-tracker?retryWrites=true&w=majority&appName=Cluster0
+   MONGODB_TEST_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/bug-tracker-test?retryWrites=true&w=majority&appName=Cluster0
    JWT_SECRET=your-super-secret-jwt-key-change-in-production
    JWT_EXPIRE=7d
    ```
