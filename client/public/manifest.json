@@ -1,0 +1,13 @@
+{
+  "short_name": "Bug Tracker",
+  "name": "MERN Bug Tracker - Testing and Debugging",
+  "description": "A comprehensive bug tracking application with testing and debugging features",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "developer"],
+  "lang": "en-US"
+}

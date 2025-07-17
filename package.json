@@ -1,0 +1,37 @@
+{
+  "name": "mern-bug-tracker",
+  "version": "1.0.0",
+  "description": "A comprehensive MERN stack bug tracker application with testing and debugging features",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test:unit": "cd server && npm run test:unit && cd ../client && npm run test:unit",
+    "test:integration": "cd server && npm run test:integration",
+    "test:coverage": "cd server && npm run test:coverage && cd ../client && npm run test:coverage",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "mern",
+    "bug-tracker",
+    "testing",
+    "debugging",
+    "react",
+    "express",
+    "mongodb",
+    "jest"
+  ],
+  "author": "MERN Bug Tracker Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
